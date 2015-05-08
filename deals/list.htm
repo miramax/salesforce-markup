@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registered deals</title>
+    <link rel="stylesheet" media="all" href="../assets/css/vendor/bootstrap.css"/>
+    <link rel="stylesheet" media="all" href="../assets/css/app.css"/>
+    <script type="text/javascript">
+        var JsonData = {
+            pending: [
+                {
+                    date: '8 mar 2014',
+                    detail: 'Structured Communications Systems Inc. - Cook Inlet Region'
+                },
+                {
+                    date: '12 mar 2014',
+                    detail: 'Structured Communications Systems Inc. - Cook Inlet Region'
+                },
+                {
+                    date: '21 mar 2014',
+                    detail: 'Structured Communications Systems Inc. - Cook Inlet Region'
+                },
+                {
+                    date: '21 mar 2014',
+                    detail: 'Structured Communications Systems Inc. - Cook Inlet Region'
+                }
+            ],
+            approved: [
+                {
+                    date: '1 apr 2014',
+                    detail: 'Some text goes here'
+                },
+                {
+                    date: '10 apr 2014',
+                    detail: 'Some text goes here'
+                },
+                {
+                    date: '30 apr 2014',
+                    detail: 'Some text goes here'
+                }
+            ],
+            declined: [
+                {
+                    date: '10 may 2014',
+                    detail: 'Lorem ipsum fake dolar sit amet.'
+                },
+                {
+                    date: '15 may 2014',
+                    detail: 'Lorem ipsum fake dolar sit amet.'
+                },
+                {
+                    date: '27 may 2014',
+                    detail: 'Lorem ipsum fake dolar sit amet.'
+                }
+            ]
+        };
+    </script>
+</head>
+<body>
+<script type="text/template" id="dealsTable">
+    <table class="table">
+        <tbody>
+        <tr>
+            <th class="thin-th col-lg-1 col-md-2 col-xs-4">Date</th>
+            <th class="thin-th col-lg-11 col-md-10 col-xs-8">Details</th>
+        </tr>
+
+        <% _.each(items, function(item,key,list){ %>
+        <tr>
+            <td class="col-lg-1 col-md-2 col-xs-4">
+                <%- item.date %>
+            </td>
+            <td class="col-lg-11 col-md-10 col-xs-8">
+                <a href="#">
+                    <%- item.detail %>
+                </a>
+            </td>
+        </tr>
+        <% }); %>
+
+        </tbody>
+    </table>
+</script>
+    <div class="container veeam">
+
+        <div class="row fake-green">
+            <span>Registered deals</span>
+        </div>
+
+        <div class="row tabs-block">
+            <!-- Nav tabs -->
+            <ul class="nav col-lg-12 col-md-12 col-xs-12 nopadding nav-tabs">
+                <li class="active col-xs-4 col-sm-2 nopadding"><a href="#pending" data-tab="pending" data-toggle="tab">PENDING</a></li>
+                <li class="col-xs-4 col-sm-2 nopadding"><a href="#approved" data-tab="approved" data-toggle="tab">APPROVED</a></li>
+                <li class="col-xs-4 col-sm-2 nopadding"><a href="#declined" data-tab="declined" data-toggle="tab">DECLINED</a></li>
+            </ul>
+        </div>
+            <!-- Tab panes -->
+            <div class="row tab-content">
+                <div class="tab-pane active" id="pending">
+                    <div class="section-pending">
+
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="approved">
+                    <div class="section-approved">
+
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="declined">
+                    <div class="section-declined">
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<script type="text/javascript" src="../assets/js/vendor/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="../assets/js/vendor/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/vendor/underscore.js"></script>
+<script type="text/javascript" src="../assets/js/deals.js"></script>
+</body>
+</html>
