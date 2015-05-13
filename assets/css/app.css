@@ -48,6 +48,10 @@
     border-bottom: 1px solid #f0f1f2;
 }
 
+.veeam .nav-tabs > li > a {
+    border: none;
+}
+
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     border-color: #f0f1f2;
 }
