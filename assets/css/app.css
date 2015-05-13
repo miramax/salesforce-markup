@@ -1,10 +1,22 @@
+html, body {
+    height: auto;
+    min-height: 100%;
+    background: #fafafa;
+}
+
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
 }
 
+.withpadding {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .veeam.container {
     width: auto;
+    height: 100%;
 }
 
 .veeam .fake-green {
@@ -54,6 +66,57 @@
 
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     border-color: #f0f1f2;
+}
+
+.veeam .promo-list {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-bottom: 50px;
+}
+
+.veeam .promo-list-bg {
+    background-color: #fafafa;
+    height: 100%;
+}
+
+.veeam select {
+    margin-top: 8px;
+}
+
+.veeam .promo-item {
+    margin-top: 15px;
+    background: #ffffff;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.veeam .promo-item__title {
+    color: #3c3d3e;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.veeam .promo-item__date {
+    color: #6a6e71;
+    font-size: 14px;
+}
+
+.veeam .promo-item__desc {
+    font-size: 14px;
+    color: #3b3c3e;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.veeam sup {
+    position: relative;
+    top: -3px;
+    font-size: 10px;
+}
+
+.veeam .form-control {
+    box-shadow: none;
 }
 
 @media (min-width: 768px) {

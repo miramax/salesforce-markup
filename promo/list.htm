@@ -8,12 +8,65 @@
     <link rel="stylesheet" media="all" href="../assets/css/vendor/bootstrap.css"/>
     <link rel="stylesheet" media="all" href="../assets/css/app.css"/>
     <script type="text/javascript">
-        var JsonData = {};
+        var JsonData = {
+            promotions: [
+                {
+                    title: 'NetApp e-series and Veeam Backup Essentials',
+                    date: 'util June 30',
+                    desc: 'some description',
+                    types: {
+                        product_type: 1,
+                        business_type: 1
+                    }
+                },
+                {
+                    title: 'NetApp e-series and Veeam Backup Essentials',
+                    date: 'util June 30',
+                    desc: 'Help your customers save 10% on Veeam® Backup Essentials™ Enterprise or Enterprise Plus Editions',
+                    types: {
+                        product_type: 2,
+                        business_type: 1
+                    }
+                },
+                {
+                    title: 'NetApp e-series and Veeam Backup Essentials',
+                    date: 'util June 30',
+                    desc: 'Pew pew Enterprise or Enterprise Plus Editions',
+                    types: {
+                        product_type: 2,
+                        business_type: 2
+                    }
+                },
+                {
+                    title: 'NetApp e-series and Veeam Backup Essentials',
+                    date: 'util June 30',
+                    desc: 'Help your customers save 10% on Veeam® Backup Essentials™ Enterprise or Enterprise Plus Editions',
+                    types: {
+                        product_type: 1,
+                        business_type: 2
+                    }
+                }
+            ]
+        };
     </script>
 </head>
 <body>
 <script type="text/template" id="promoItem">
+    <% _.each(items, function(item, key, list) { %>
+        <div class="promo-item">
+            <div class="promo-item__title">
+                <%- item.title %>
+            </div>
 
+            <div class="promo-item__date">
+                <%- item.date %><sup>th</sup>
+            </div>
+
+            <div class="promo-item__desc">
+                <%- item.desc %>
+            </div>
+        </div>
+    <% }); %>
 </script>
 <div class="container veeam">
 
@@ -21,8 +74,23 @@
         <span>Promotions</span>
     </div>
 
-    <div class="row">
+    <div class="row promo-list-bg">
+        <div class="promo-list">
+            <select class="form-control product_types" name="product_types" id="product_types">
+                <option selected value="1">All products</option>
+                <option value="2">Promo product</option>
+            </select>
 
+            <select class="form-control business_types" name="business_types" id="business_types">
+                <option selected value="1">All business sizes</option>
+                <option value="2">Promo Business size</option>
+            </select>
+
+            <div class="promo-items row nopadding">
+
+            </div>
+
+        </div>
     </div>
 
 </div>
