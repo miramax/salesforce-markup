@@ -1,6 +1,10 @@
 html, body {
     height: auto;
     min-height: 100%;
+}
+
+html.gray,
+html.gray body {
     background: #fafafa;
 }
 

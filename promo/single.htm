@@ -9,52 +9,51 @@
     <link rel="stylesheet" media="all" href="../assets/css/app.css"/>
     <script type="text/javascript">
         var JsonData = {
-            pending: [
+
+            details:
+            'Elevate your sales by selling NetApp and Veeam together. <br><br> Until April 30, 2015, your customers can get' +
+            'a 10% discount on Veeam by purchasing' +
+            'NetApp E2700 series and Veeam® Backup' +
+            'Essentials™ Enterprise or Enterprise Plus' +
+            'Edition. Don\'t miss this opportunity to close more deals!<br/>' +
+            'Offer specially priced NetApp E2700 series' +
+            'and a 10% discount on Veeam Backup' +
+            'Essentials™ Enterprise or Enterprise Plus' +
+            'combined solution and:<br/><br/><ul>' +
+
+            '<li>Increase your business with the combined' +
+            'Veeam and NetApp solution</li>' +
+            '<li>Close more deals by selling NetApp and' +
+            'Veeam together</li>' +
+            '<li>Get higher margins with bigger deals</li>' +
+            '<li>And much more!</li></ul><br/>' +
+            'Increase your revenue by offering your customers the chance to achieve unprecedented levels of data protection and the ' +
+            'fastest recovery time and point objectives (RTPO™) with Veeam and the NetApp E2700 series.',
+
+            resources: [
                 {
-                    date: '8 mar 2014',
-                    detail: 'Structured Communications Systems Inc. - Cook Inlet Region'
+                    name: 'Document name.pdf',
+                    type: 'pdf'
                 },
                 {
-                    date: '12 mar 2014',
-                    detail: 'Structured Communications Systems Inc. - Cook Inlet Region'
+                    name: 'Document name.pdf',
+                    type: 'doc'
                 },
                 {
-                    date: '21 mar 2014',
-                    detail: 'Structured Communications Systems Inc. - Cook Inlet Region'
+                    name: 'Document name.pdf',
+                    type: 'doc'
                 },
                 {
-                    date: '21 mar 2014',
-                    detail: 'Structured Communications Systems Inc. - Cook Inlet Region'
+                    name: 'Document name.pdf',
+                    type: 'pdf'
+                },
+                {
+                    name: 'Document name.pdf',
+                    type: 'xls'
                 }
             ],
-            approved: [
-                {
-                    date: '1 apr 2014',
-                    detail: 'Some text goes here'
-                },
-                {
-                    date: '10 apr 2014',
-                    detail: 'Some text goes here'
-                },
-                {
-                    date: '30 apr 2014',
-                    detail: 'Some text goes here'
-                }
-            ],
-            declined: [
-                {
-                    date: '10 may 2014',
-                    detail: 'Lorem ipsum fake dolar sit amet.'
-                },
-                {
-                    date: '15 may 2014',
-                    detail: 'Lorem ipsum fake dolar sit amet.'
-                },
-                {
-                    date: '27 may 2014',
-                    detail: 'Lorem ipsum fake dolar sit amet.'
-                }
-            ]
+
+            tc: 'Some text here...'
         };
     </script>
 </head>
@@ -65,33 +64,33 @@
 <div class="container veeam">
 
     <div class="row fake-green">
-        <span>Promotions</span>
+        <span>NetApp e-series...</span>
     </div>
 
     <div class="row tabs-block">
         <!-- Nav tabs -->
         <ul class="nav col-lg-12 col-md-12 col-xs-12 nopadding nav-tabs">
-            <li class="active col-xs-4 col-sm-2 nopadding"><a href="#pending" data-tab="pending" data-toggle="tab">PENDING</a></li>
-            <li class="col-xs-4 col-sm-2 nopadding"><a href="#approved" data-tab="approved" data-toggle="tab">APPROVED</a></li>
-            <li class="col-xs-4 col-sm-2 nopadding"><a href="#declined" data-tab="declined" data-toggle="tab">DECLINED</a></li>
+            <li class="active col-xs-4 col-sm-2 nopadding"><a href="#details" data-tab="details" data-toggle="tab">DETAILS</a></li>
+            <li class="col-xs-4 col-sm-2 nopadding"><a href="#resources" data-tab="resources" data-toggle="tab">RESOURCES</a></li>
+            <li class="col-xs-4 col-sm-2 nopadding"><a href="#tc" data-tab="tc" data-toggle="tab">T&C</a></li>
         </ul>
     </div>
     <!-- Tab panes -->
     <div class="row tab-content">
-        <div class="tab-pane active" id="pending">
-            <div class="section-pending">
+        <div class="tab-pane active" id="details">
+            <div class="section-details">
 
             </div>
         </div>
 
-        <div class="tab-pane" id="approved">
-            <div class="section-approved">
+        <div class="tab-pane" id="resources">
+            <div class="section-resources">
 
             </div>
         </div>
 
-        <div class="tab-pane" id="declined">
-            <div class="section-declined">
+        <div class="tab-pane" id="tc">
+            <div class="section-tc">
 
             </div>
         </div>
@@ -102,7 +101,7 @@
 <script type="text/javascript" src="../assets/js/vendor/bootstrap.js"></script>
 <script type="text/javascript" src="../assets/js/vendor/underscore.js"></script>
 
-<script type="text/javascript" src="../assets/js/promo.js"></script>
+<script type="text/javascript" src="../assets/js/promoSingle.js"></script>
 
 </body>
 </html>

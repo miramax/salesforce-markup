@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('html').addClass('gray');
     var sorting = {};
 
     render('#promoItem', '.promo-items', JsonData.promotions);
