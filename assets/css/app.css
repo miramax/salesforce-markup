@@ -40,6 +40,7 @@ html.gray body {
 .veeam .tab-content {
     position: relative;
     top: 10px;
+    padding-bottom: 50px;
 }
 
 .veeam .nav-tabs > li.active > a {
@@ -76,6 +77,10 @@ html.gray body {
     margin-right: 15px;
     margin-left: 15px;
     padding-bottom: 50px;
+}
+
+.gray .veeam .nav-tabs {
+    border: none;
 }
 
 .veeam .promo-list-bg {
@@ -123,9 +128,74 @@ html.gray body {
     box-shadow: none;
 }
 
+.veeam .tabs-block {
+    background: #ffffff;
+}
+
+.veeam .resource {
+    border: 1px solid #ccc;
+    background: #fcfcfc;
+    padding: 7px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.veeam .resource img {
+    width: 32px;
+    height: 37px;
+}
+
+.veeam .resource span {
+    font-size: 17px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.section-resources,
+.section-details,
+.section-tc {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.veeam .black-header {
+    background: #344a5f;
+    text-align: center;
+}
+
+.veeam .black-header__title {
+    font-size: 20px;
+    color: #fff;
+    max-width: 250px;
+    margin: 0px auto;
+    margin-top: 7px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.veeam .black-header__util {
+    color: #ababab;
+    padding-bottom: 15px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.veeam .black-header img {
+    width: 70px; height: 70px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
 @media (min-width: 768px) {
     .tabs-block, .tab-content {
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .section-resources,
+    .section-details,
+    .section-tc {
+        margin: 0px;
     }
 }

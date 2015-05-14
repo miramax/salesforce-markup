@@ -10,6 +10,10 @@
     <script type="text/javascript">
         var JsonData = {
 
+            title: 'NetApp e-series and Veeam Backup Essentials',
+
+            util: 'util June 30',
+
             details:
             'Elevate your sales by selling NetApp and Veeam together. <br><br> Until April 30, 2015, your customers can get' +
             'a 10% discount on Veeam by purchasing' +
@@ -58,13 +62,28 @@
     </script>
 </head>
 <body>
-<script type="text/template" id="promoItem">
-
+<script type="text/template" id="resource">
+    <% _.each(items, function(item) { %>
+        <div class="resource">
+            <img src="../assets/img/<%- item.type %>-ico.jpg" alt="<%- item.type %> document"/>
+            <span><%- item.name %></span>
+        </div>
+    <% }); %>
 </script>
 <div class="container veeam">
 
     <div class="row fake-green">
         <span>NetApp e-series...</span>
+    </div>
+
+    <div class="black-header row">
+        <img src="../assets/img/promo_icon.png"/>
+        <div class="black-header__title">
+
+        </div>
+        <div class="black-header__util">
+            <span></span><sup>th</sup>
+        </div>
     </div>
 
     <div class="row tabs-block">
