@@ -193,6 +193,10 @@ html.gray body {
         padding-right: 25px;
     }
 
+    .veeam .black-header__title {
+        max-width: 600px;
+    }
+
     .section-resources,
     .section-details,
     .section-tc {
