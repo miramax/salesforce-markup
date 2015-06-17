@@ -8,6 +8,11 @@ html.gray body {
     background: #fafafa;
 }
 
+html.deep-gray,
+html.deep-gray body {
+    background: #f0f1f2;
+}
+
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
@@ -185,6 +190,75 @@ html.gray body {
     display: block;
     margin: 0px auto;
     margin-top: 20px;
+}
+
+.veeam .bold-text {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.veeam .pricing-list {
+    padding-top: 15px;
+}
+
+.veeam .pricing-list .section-resources {
+    margin: 15px 0px 20px !important;
+}
+
+.veeam .pricing-list .footer-description {
+    margin-bottom: 10px;
+}
+
+.veeam .pricing-list .footer-block-submit input {
+    margin-bottom: 10px;
+}
+
+.btn.green {
+    background: #2eb349;
+    color: #fff;
+    outline: none;
+}
+
+.btn.white-silver {
+    background: rgb(247,247,247); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(247,247,247,1) 0%, rgba(239,239,239,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(100%,rgba(239,239,239,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(239,239,239,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(239,239,239,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(239,239,239,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(247,247,247,1) 0%,rgba(239,239,239,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+    outline: none;
+}
+
+.veeam .pricing-list .footer-block-submit button.green {
+    padding: 6px 50px;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 160px;
+    height: 40px;
+    display: block;
+}
+
+.veeam .ty-block {
+    width: 270px;
+    margin: 120px auto;
+    line-height: 200%;
+}
+
+.veeam .ty-block-text {
+    font-size: 22px;
+    text-align: center;
+}
+
+.veeam .ty-block .btn-ok {
+    text-transform: uppercase;
+    width: 140px;
+    height: 40px;
+    margin: 40px auto;
+    display: block;
 }
 
 @media (min-width: 768px) {
