@@ -143,17 +143,23 @@ html.deep-gray body {
     padding: 7px;
     border-radius: 4px;
     margin-bottom: 10px;
+    overflow: hidden;
+    padding-left: 50px;
 }
 
 .veeam .resource img {
     width: 32px;
     height: 37px;
+    float: left;
+    display: block;
+    margin-left: -40px;
 }
 
 .veeam .resource span {
     font-size: 17px;
-    margin-left: 10px;
-    display: inline-block;
+    margin: 5px 0px 0px 5px;
+    display: block;
+    float: left;
 }
 
 .section-resources,
