@@ -170,13 +170,13 @@ html.deep-gray body {
 }
 
 .veeam .black-header {
-    background: #344a5f;
+    background: #fff;
     text-align: center;
 }
 
 .veeam .black-header__title {
     font-size: 20px;
-    color: #fff;
+    color: #222;
     max-width: 250px;
     margin: 0px auto;
     margin-top: 7px;
@@ -185,17 +185,16 @@ html.deep-gray body {
 }
 
 .veeam .black-header__util {
-    color: #ababab;
+    color: #666;
     padding-bottom: 15px;
     margin-top: 5px;
     font-size: 13px;
 }
 
 .veeam .black-header img {
-    width: 70px; height: 70px;
+    width: 50px; height: 50px;
     display: block;
-    margin: 0px auto;
-    margin-top: 20px;
+    margin: 15px auto 10px;
 }
 
 .veeam .bold-text {
