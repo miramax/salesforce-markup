@@ -266,6 +266,41 @@ html.deep-gray body {
     display: block;
 }
 
+.veeam .term-conditions {
+    padding-top: 20px;
+}
+
+.veeam .term-conditions .paragraph {
+    margin-bottom: 20px;
+}
+
+.veeam .term-conditions .resources {
+    margin-bottom: 40px;
+}
+
+.veeam .term-conditions button {
+    padding: 9px 42px;
+    min-width: 135px;
+}
+
+.veeam .resource-with-triangle {
+    padding: 10px 7px 10px 50px;
+    background: #fafafa url(../../assets/img/resource-traingle.png) 95% 20px no-repeat;
+}
+
+.veeam .term-conditions .buttons-bottom {
+    overflow: hidden;
+}
+
+.veeam .term-conditions .buttons-bottom .btn-left {
+    float: left;
+}
+
+
+.veeam .term-conditions .buttons-bottom .btn-right {
+    float: right;
+}
+
 @media (min-width: 768px) {
     .tabs-block, .tab-content {
         padding-left: 25px;
@@ -280,5 +315,17 @@ html.deep-gray body {
     .section-details,
     .section-tc {
         margin: 0px;
+    }
+}
+
+@media (min-width: 440px) {
+    .veeam .term-conditions .buttons-bottom .btn-left {
+        float: left;
+    }
+
+
+    .veeam .term-conditions .buttons-bottom .btn-right {
+        float: left;
+        margin-left: 20px;
     }
 }
