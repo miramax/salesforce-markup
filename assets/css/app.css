@@ -285,7 +285,7 @@ html.deep-gray body {
 
 .veeam .resource-with-triangle {
     padding: 10px 7px 10px 50px;
-    background: #fafafa url(../../assets/img/resource-traingle.png) 95% 20px no-repeat;
+    background: #fafafa url(../../assets/img/resource-traingle.png) 95% center no-repeat;
 }
 
 .veeam .term-conditions .buttons-bottom {
