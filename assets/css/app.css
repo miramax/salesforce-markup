@@ -323,6 +323,10 @@ html.deep-gray body {
         float: left;
     }
 
+    .veeam .term-conditions .buttons-bottom {
+        width: 70%;
+        margin: 0 auto !important;
+    }
 
     .veeam .term-conditions .buttons-bottom .btn-right {
         float: left;
