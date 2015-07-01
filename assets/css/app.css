@@ -1,16 +1,37 @@
 html, body {
     height: auto;
     min-height: 100%;
+    background: #F0F1F2;
+    font-family: 'ProximaNovaSoft-Semibold', sans-serif;
+    font-size: .9375rem;
 }
 
 html.gray,
 html.gray body {
-    background: #fafafa;
+    background: #F0F1F2;
 }
 
 html.deep-gray,
 html.deep-gray body {
-    background: #f0f1f2;
+    background: #F0F1F2;
+}
+
+/* template styles */
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    border-color: #dddddd;
+    border-top: none;
+    border-bottom: 1px solid #ddd;
+}
+
+select {
+    -webkit-appearance: none !important;
+    background: #FFFFFF url(../img/dropdown_triangle.png) no-repeat !important;
+    background-position: 98.5% center !important;
 }
 
 .nopadding {
@@ -74,10 +95,6 @@ html.deep-gray body {
     border: none;
 }
 
-.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-    border-color: #f0f1f2;
-}
-
 .veeam .promo-list {
     margin-right: 15px;
     margin-left: 15px;
@@ -139,7 +156,7 @@ html.deep-gray body {
 
 .veeam .resource {
     border: 1px solid #ccc;
-    background: #fcfcfc;
+    background: #FFFFFF;
     padding: 7px;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -224,17 +241,20 @@ html.deep-gray body {
     background: #2eb349;
     color: #fff;
     outline: none;
+    font-weight: bold;
 }
 
 .btn.white-silver {
-    background: rgb(247,247,247); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(247,247,247,1) 0%, rgba(239,239,239,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(100%,rgba(239,239,239,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(239,239,239,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(239,239,239,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(239,239,239,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(247,247,247,1) 0%,rgba(239,239,239,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+    background: #FFFFFF;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid #dfe0e1;
+    border-radius: 6px;
+}
+
+.btn.white-silver:focus,
+.btn.white-silver:active {
+    background-color: #edeff0;
     outline: none;
 }
 
@@ -243,7 +263,6 @@ html.deep-gray body {
     font-size: 18px;
     margin: 0 auto;
     width: 160px;
-    height: 40px;
     display: block;
 }
 
@@ -285,7 +304,7 @@ html.deep-gray body {
 
 .veeam .resource-with-triangle {
     padding: 10px 7px 10px 50px;
-    background: #fafafa url(../../assets/img/resource-traingle.png) 95% center no-repeat;
+    background: #FFFFFF url(../../assets/img/resource-traingle.png) 95% center no-repeat;
 }
 
 .veeam .term-conditions .buttons-bottom {
