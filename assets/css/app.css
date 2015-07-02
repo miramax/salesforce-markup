@@ -134,12 +134,9 @@ select {
 
 .veeam .promo-item__date {
     color: #6a6e71;
-    font-size: 14px;
 }
 
 .veeam .promo-item__desc {
-    font-size: 14px;
-    color: #3b3c3e;
     margin-top: 5px;
     font-weight: 400;
 }
