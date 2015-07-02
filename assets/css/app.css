@@ -4,6 +4,10 @@ html, body {
     background: #F0F1F2;
     font-family: 'ProximaNovaSoft-Semibold', sans-serif;
     font-size: .9375rem;
+    line-height: 1.25;
+    color: #3c3d3e;
+    word-wrap: break-word;
+    font-weight: 300;
 }
 
 html.gray,
